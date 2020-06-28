@@ -37,6 +37,7 @@ class UserDetailsViewController: UIViewController {
             self.fullNameLbl.text = tasks[0].student_full_name ?? ""
             let taj = Int(tasks[0].taj!)
             self.tajLbl.text = String(taj)
+            self.birthDateLbl.text = tasks[0].birth_date
             self.birthPlaceLbl.text = tasks[0].birth_place
             self.homeAddressLbl.text = tasks[0].home_address
             self.mothersNameLbl.text = tasks[0].mothers_name

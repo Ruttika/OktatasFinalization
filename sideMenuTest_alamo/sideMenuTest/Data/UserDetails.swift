@@ -13,7 +13,7 @@ class UserDetails: NSObject, OHMappingProtocol {
     
     @objc var student_id: NSNumber?
     @objc var taj: NSNumber?
-//    @objc var birth_date: String?
+    @objc var birth_date: String?
     @objc var birth_place: String?
     @objc var home_address: String?
     @objc var mothers_name: String?
@@ -24,7 +24,7 @@ class UserDetails: NSObject, OHMappingProtocol {
     func mappingDictionary() -> [AnyHashable : Any]! {
         return ["student_id" : "student_id",
                 "taj" : "taj",
-//                "birth_date" : "birth_date",
+                "birth_date" : "birth_date",
                 "birth_place" : "birth_place",
                 "home_address" : "home_address",
                 "mothers_name" : "mothers_name",
