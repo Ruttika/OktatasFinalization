@@ -55,4 +55,7 @@ class UserDetailsViewController: UIViewController {
         PushMessageTask().getPushMessage()
     }
     
+    @IBAction func exitBtnPushed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }

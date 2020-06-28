@@ -448,9 +448,28 @@
                                 <color key="textColor" red="0.99993020300000002" green="0.92850404980000001" blue="0.66211456059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R10-kE-voi">
+                                <rect key="frame" x="5" y="0.0" width="57" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="57" id="T6g-bL-ek9"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="UCI-Gh-hiM"/>
+                                    <constraint firstAttribute="width" constant="57" id="jSg-0i-cM3"/>
+                                    <constraint firstAttribute="height" constant="30" id="mXV-mU-9Ns"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Kilépés">
+                                    <color key="titleColor" red="0.99993020300000002" green="0.92850404980000001" blue="0.66211456059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="exitBtnPushed:" destination="qqf-AY-F3n" eventType="touchUpInside" id="vM3-S6-FSR"/>
+                                    <action selector="update:" destination="rWv-1t-ti9" eventType="touchUpInside" id="82r-HA-kdf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.56481832269999999" green="0.37495988609999997" blue="0.37489387390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="R10-kE-voi" firstAttribute="leading" secondItem="i1v-Yl-3M4" secondAttribute="leading" constant="5" id="4uG-Ja-n0e"/>
+                            <constraint firstItem="R10-kE-voi" firstAttribute="top" secondItem="i1v-Yl-3M4" secondAttribute="top" id="5KU-fb-2oS"/>
                             <constraint firstItem="1a0-TO-kDD" firstAttribute="top" secondItem="i1v-Yl-3M4" secondAttribute="top" constant="177" id="F6p-se-fzo"/>
                             <constraint firstItem="rxd-kb-WHe" firstAttribute="centerX" secondItem="nAd-pe-UZg" secondAttribute="centerX" id="Iez-Qu-LkO"/>
                             <constraint firstItem="i1v-Yl-3M4" firstAttribute="bottom" secondItem="1a0-TO-kDD" secondAttribute="bottom" constant="12" id="Ilf-SL-Idf"/>
@@ -605,24 +624,16 @@
                                     </tableView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tp3-pI-exK">
-                                <rect key="frame" x="324" y="0.0" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Kp9-bB-Wkz"/>
-                                    <constraint firstAttribute="width" constant="46" id="Tff-TJ-Gnc"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="rK4-kP-TR5" kind="presentation" identifier="pushNoticeVC" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="8ol-5o-quo"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yV1-wv-Auh">
                                 <rect key="frame" x="5" y="0.0" width="57" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="57" id="KfZ-Bb-fzF"/>
                                     <constraint firstAttribute="height" constant="30" id="u7r-Cm-Dh8"/>
                                 </constraints>
-                                <state key="normal" title="Kilépés"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Kilépés">
+                                    <color key="titleColor" red="0.56481832269999999" green="0.37495988609999997" blue="0.37489387390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="update:" destination="rWv-1t-ti9" eventType="touchUpInside" id="gGb-Q9-nK5"/>
                                 </connections>
@@ -631,12 +642,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xP5-g3-azK" firstAttribute="bottom" secondItem="4Sk-fd-RGT" secondAttribute="bottom" constant="12" id="7Un-9W-b6Y"/>
-                            <constraint firstItem="xP5-g3-azK" firstAttribute="trailing" secondItem="Tp3-pI-exK" secondAttribute="trailing" constant="5" id="I0n-sj-OqM"/>
                             <constraint firstItem="4Sk-fd-RGT" firstAttribute="top" secondItem="xP5-g3-azK" secondAttribute="top" constant="65" id="No0-Ja-yKG"/>
                             <constraint firstItem="yV1-wv-Auh" firstAttribute="leading" secondItem="xP5-g3-azK" secondAttribute="leading" constant="5" id="l1Q-YF-Jzp"/>
                             <constraint firstItem="4Sk-fd-RGT" firstAttribute="leading" secondItem="xP5-g3-azK" secondAttribute="leading" constant="5" id="nDU-8E-7Eu"/>
                             <constraint firstItem="xP5-g3-azK" firstAttribute="trailing" secondItem="4Sk-fd-RGT" secondAttribute="trailing" constant="5" id="oaH-2c-KnJ"/>
-                            <constraint firstItem="Tp3-pI-exK" firstAttribute="top" secondItem="xP5-g3-azK" secondAttribute="top" id="suN-iE-URN"/>
                             <constraint firstItem="yV1-wv-Auh" firstAttribute="top" secondItem="xP5-g3-azK" secondAttribute="top" id="x9D-Xg-J1X"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xP5-g3-azK"/>
@@ -716,6 +725,6 @@
         <image name="user-silhouette" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8ol-5o-quo"/>
+        <segue reference="Lp7-bl-aDu"/>
     </inferredMetricsTieBreakers>
 </document>
